@@ -2296,6 +2296,7 @@ export default function InterviewPrepPage() {
     selectedDifficulty,
     filterRecency,
     selectedFrequency,
+    selectedexperience
   ])
 
   const toggleFilterList = (setter: React.Dispatch<React.SetStateAction<string[]>>, value: string) => {
