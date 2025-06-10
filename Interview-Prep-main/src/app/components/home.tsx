@@ -49,7 +49,7 @@ const sampleQuestions: Question[] = [
   {
     id: "q1",
     title: "Design a Scalable Cache System",
-    companies: ["Amazon", "Facebook", "Google"],
+    companies: ["Amazon", "Google"],
     topics: ["System Design", "Scalability", "HLD"],
     roles: ["SDE - 2", "Senior SDE"],
     roundType: "Design",
@@ -63,7 +63,7 @@ const sampleQuestions: Question[] = [
   {
     id: "q2",
     title: "Find Median from Data Stream",
-    companies: ["Google", "Microsoft", "Apple"],
+    companies: ["Google", "Microsoft"],
     topics: ["Data Structures", "Heaps", "Algorithms"],
     roles: ["SDE - 1", "SDE - 2"],
     roundType: "Technical Interview",
@@ -90,7 +90,7 @@ const sampleQuestions: Question[] = [
   {
     id: "q4",
     title: "Rotate Matrix",
-    companies: ["Google", "Facebook", "Amazon", "Zoho"],
+    companies: ["Google", "Amazon"],
     topics: ["Arrays", "Arrangement", "Matrix"],
     roles: ["SDE - 1", "SDE - 2"],
     roundType: "Technical Interview",
@@ -103,7 +103,7 @@ const sampleQuestions: Question[] = [
   {
     id: "q5",
     title: "Merge Overlapping Intervals",
-    companies: ["Google", "Amazon", "Directi", "Fab"],
+    companies: ["Google", "Amazon"],
     topics: ["Arrays", "Value ranges", "Sorting", "Intervals"],
     roles: ["SDE - 1", "SDE - 2"],
     roundType: "Technical Interview",
@@ -142,7 +142,7 @@ const sampleQuestions: Question[] = [
   {
     id: "q8",
     title: "Median of Array (Sorted Arrays)",
-    companies: ["Amazon", "VMWare", "Google", "Microsoft", "Goldman Sachs"],
+    companies: ["Amazon","Google", "Microsoft", "Goldman Sachs"],
     topics: ["Binary Search", "Sort modification", "Divide and Conquer", "Arrays"],
     roles: ["SDE - 2", "Senior SDE"],
     roundType: "Technical Interview",
@@ -155,7 +155,7 @@ const sampleQuestions: Question[] = [
   {
     id: "q9",
     title: "Implement Power Function",
-    companies: ["Google", "LinkedIn"],
+    companies: ["Google"],
     topics: ["Binary Search", "Search step simulation", "Math"],
     roles: ["SDE - 1"],
     roundType: "Technical Interview",
@@ -695,7 +695,7 @@ const sampleQuestions: Question[] = [
   {
     id: "q47",
     title: "Maximum in Sliding Windows of Size K",
-    companies: ["Goldman Sachs"],
+    companies: ["Goldman Sachs","Google"],
     topics: ["Deque", "Sliding Window", "Arrays"],
     roles: ["SDE - 1"],
     roundType: "Technical Interview",
@@ -2120,6 +2120,72 @@ Constraints:
     description:
       "Given a binary tree, find the diameter of the tree. The diameter is defined as the length of the longest path between any two nodes in the tree.",
     solutionLink: "https://www.naukri.com/code360/problems/diameter-of-the-binary-tree_920552?ieSlug=adobe-interview-experience-by-shivam-off-campus-oct-2022&ieCompany=adobe"
+  },
+
+  {
+    id: "q153",
+    title: "Good Nodes",
+    companies: ["Google"],
+    topics: ["Trees", "DFS", "Recursion"],
+    roles: ["SWE Intern"],
+    roundType: "Technical Interview",
+    difficulty: "Medium",
+    askedDate: "2023-09-18T00:00:00.000Z",
+    frequency: "Medium",
+    experience: ["College Grad"],
+    description:
+      "Given a binary tree, a node X in the tree is named good if in the path from root to X there are no nodes with a value greater than X. Return the number of good nodes in the binary tree.",
+    solutionLink:
+      "https://www.naukri.com/code360/problems/good-nodes_3169337?ieSlug=google-interview-experience-off-campus-aug-2023&ieCompany=google",
+  },
+  {
+    id: "q154",
+    title: "Maximum Of All Subarrays Of Size K",
+    companies: ["Google"],
+    topics: ["Arrays", "Sliding Window", "Deque"],
+    roles: ["SWE Intern"],
+    roundType: "Technical Interview",
+    difficulty: "Medium",
+    askedDate: "2023-10-20T00:00:00.000Z",
+    frequency: "High",
+    experience: ["College Grad"],
+    description:
+      "Given an array and a number k, find the maximum for each and every contiguous subarray of size k.",
+    solutionLink:
+      "https://www.naukri.com/code360/problems/maximum-of-all-subarrays-of-size-k_1170789?ieSlug=google-interview-experience-off-campus-aug-2023&ieCompany=google",
+  },
+
+  {
+    id: "q155",
+    title: "Painter's Partition Problem",
+    companies: ["Google"],
+    topics: ["Binary Search", "Greedy", "Partitioning"],
+    roles: ["SDE - Intern"],
+    roundType: "OA",
+    difficulty: "Medium",
+    askedDate: "2023-01-11T00:00:00.000Z",
+    frequency: "Medium",
+    experience: ["College Grad"],
+    description:
+      "Given an array/list of board lengths and number of painters, return the minimum time needed to paint all the boards. Each painter can only paint continuous sections. Each unit of board takes 1 unit of time.",
+    solutionLink:
+      "https://www.naukri.com/code360/problems/painter-s-partition-problem_1089557?ieSlug=interview-experience-by-alok-raj-on-campus-jan-2023&ieCompany=google",
+  },
+  {
+    id: "q156",
+    title: "Chocolate Distribution Problem",
+    companies: ["Google"],
+    topics: ["Greedy", "Sorting", "Sliding Window"],
+    roles: ["SDE - Intern"],
+    roundType: "OA",
+    difficulty: "Medium",
+    askedDate: "2023-01-11T00:00:00.000Z",
+    frequency: "Medium",
+    experience: ["College Grad"],
+    description:
+      "Given a list of chocolate packets and number of students, distribute packets such that each student gets one packet and the difference between the max and min chocolates received is minimized.",
+    solutionLink:
+      "https://www.naukri.com/code360/problems/chocolate-problem_893280?ieSlug=interview-experience-by-alok-raj-on-campus-jan-2023&ieCompany=google",
   }
 
 ]
@@ -2401,7 +2467,7 @@ export default function InterviewPrepPage() {
                 {/* experience filter */}
                 <div>
                   <Label className="text-sm font-medium flex items-center gap-1 mb-2 text-gray-600">
-                    <Users className="w-4 h-4" /> experience
+                    <Users className="w-4 h-4" /> Experience
                   </Label>
                   <div className="max-h-32 overflow-y-auto space-y-1 pr-1 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
                     {allExperienceLevels.map((experience) => (
@@ -2480,6 +2546,8 @@ export default function InterviewPrepPage() {
               selectExperience={selectedexperience[0] || null}
             />
           </div>
+
+          
 
           <div className="lg:col-span-3 space-y-6">
             {filteredQuestions.length > 0 ? (
