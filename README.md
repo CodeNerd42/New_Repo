@@ -28,8 +28,8 @@
 
 ## 🚀 Tech Stack
 
-- **Frontend**: React + TailwindCSS  
-- **State Management**: React Hooks  
+- **Frontend**: Next + TailwindCSS  
+- **State Management**: Next Hooks  
 - **UI Components**: Custom-built with accessibility and responsiveness in mind
 
 ---
